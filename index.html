@@ -1,111 +1,189 @@
 <!doctype html>
+<!--suppress HtmlUnknownAnchorTarget -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
 
 
-    <!-- normalizing sheet  -->
+        <!-- normalizing sheet  -->
 
-    <link rel="stylesheet" href="css/vendors/normalize.css" type="text/css">
-
-    <!--    other sheets vendor (online)-->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!--     other sheets vendor (offline)  -->
-    <link rel="stylesheet" href="css/vendors/grid12.css" type="text/css">
-    <!--   our sheet -->
-    <link rel="stylesheet" href="css/app.css" type="text/css">
-</head>
-<body>
+        <link rel="stylesheet" href="css/vendors/normalize.css" type="text/css">
+<!--        <link rel="stylesheet" href="css/vendors/reset.css" type="text/css">-->
 
 
-<header class="p_hero">
+        <!--    other sheets vendor (online)-->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+              integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+              crossorigin="anonymous">
+        <!--     other sheets vendor (offline)  -->
+        <link rel="stylesheet" href="css/vendors/grid12.css" type="text/css">
+        <!--   our sheet -->
+        <link rel="stylesheet" href="css/app.css" type="text/css">
+    </head>
+    <body>
 
-    <nav>
-        <div class="row">
-            <img class="logo" src="img/logo.svg" alt="Omnifood logo">
-            <!--                <img class="logo-black" src="img/logo.png" alt="Omnifood logo" >-->
 
-            <!-- js--main-nav -->
-            <ul class="main-nav ">
-                <li><a class="active" href="#features">Food delivery</a></li>
-                <li><a  href="#works">How it works</a></li>
-                <li><a href="#cities">Our cities</a></li>
-                <li><a href="#plans">Sign up</a></li>
-            </ul>
-            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-        </div>
-    </nav>
+        <header class="as_hero">
 
-    <div class="pd_content_box">
-        <h1 class="bigtext">You are the master of your destiny. <br> <b>Join us today.</b></h1>
+            <nav class="as_nav_bar">
+                <img class="logo" src="img/logo.svg" alt="Omnifood logo">
+                <!--                <img class="logo-black" src="img/logo.png" alt="Omnifood logo" >-->
+
+                <!-- js--main-nav -->
+                <ul class="as_nav_links ">
+                    <li><a class="active" href="#features">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#plans">Sign up</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+            </nav>
+
+            <div class="pd_content_box">
+                <h1 class="h1-text-slim-white-capitalize">You are the master of your destiny. <br> <b>Join us today.</b></h1>
+                <br>
+                <a href="#" class="btn1">Know more</a>
+                <a href="#" class="btn2">Get Started</a>
+            </div>
+
+        </header>
+
+        <!-- ===================================================================================-->
+
+        <section class="section-features " id="features">
+            <div class="">
+                <h2>Get food fast &mdash; not fast food</h2>
+                <p class="long-copy">
+                    Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time
+                    for cooking. So let us take care of that, we're really good at it, we promise!
+                </p>
+            </div>
+
+            <div class=" ">
+                <div class="col span-1-of-4 box">
+                    <i class="fa fa-wordpress fa-5x"></i>
+                    <h3>Up to 365 days/year</h3>
+                    <p>
+                        Never cook again! We really mean that. Our subscription plans include up to 365 days/year
+                        coverage. You can also choose to order more flexibly if that's your style.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="fa fa-wordpress fa-5x"></i>
+                    <h3>Ready in 20 minutes</h3>
+                    <p>
+                        You're only twenty minutes away from your delicious and super healthy meals delivered right to
+                        your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="fa fa-wordpress fa-5x"></i>
+                    <h3>100% organic</h3>
+                    <p>
+                        All our vegetables are fresh, organic and local. Animals are raised without added hormones or
+                        antibiotics. Good for your health, the environment, and it also tastes better!
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="fa fa-wordpress fa-5x"></i>
+                    <h3>Order anything</h3>
+                    <p>
+                        We don't limit your creativity, which means you can order whatever you feel like. You can also
+                        choose from our menu containing over 100 delicious meals. It's up to you!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===================================================================================-->
+
         <br>
-        <a href="#" class="btn1">Know more</a>
-        <a href="#" class="btn2">Get Started</a>
-    </div>
 
-</header>
+        <p>
+            this para is causing fuck up.. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident
+            quaerat
+            suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas
+            veritatis?
+        </p>
 
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dolore impedit nihil non provident quaerat
-    suscipit vero. Animi aperiam assumenda autem dignissimos eligendi eveniet excepturi iusto pariatur, quas veritatis?
-</p>
 
+        <h1>Omni fooddy</h1>
+        <hr>
 
-<h1>Omni fooddy</h1>
-<hr>
-
-</body>
+    </body>
 </html>
 
 
@@ -132,3 +210,63 @@
 
 
 <!--    </nav>-->
+
+<!--=======================================================================================================-->
+
+
+<!--        <section class="sect-feat">-->
+<!--            <h3 class="h3-text-red-caps">-->
+<!--                Some sexy title&#45;&#45;Some sexy titleSome-->
+<!--            </h3>-->
+<!--            <p class="std-text-lighter-capitalize">-->
+<!--                this is a sexy subline to the sub title. Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--                Magnam nihil numquam quasi sequi suscipit!-->
+<!--            </p>-->
+
+<!--            <article>-->
+<!--                <section  >-->
+<!--                    <i class="fa fa-wordpress fa-5x"></i>-->
+<!--                    <h3>This is a cool heading</h3>-->
+<!--                    <p>-->
+<!--                        here we explain the heading in detail. Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--                        Accusamus animi assumenda cum delectus, dignissimos ducimus explicabo, fugiat harum illo illum-->
+<!--                        incidunt iste natus porro provident quo repudiandae sapiente velit veritatis.-->
+<!--                    </p>-->
+<!--                </section>-->
+
+<!--                <section  >-->
+<!--                    <i class="fa fa-wordpress fa-5x"></i>-->
+<!--                    <h3>This is a cool heading</h3>-->
+<!--                    <p>-->
+<!--                        here we explain the heading in detail. Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--                        Accusamus animi assumenda cum delectus, dignissimos ducimus explicabo, fugiat harum illo illum-->
+<!--                        incidunt iste natus porro provident quo repudiandae sapiente velit veritatis.-->
+<!--                    </p>-->
+<!--                </section>-->
+
+<!--                <section  >-->
+<!--                    <i class="fa fa-wordpress fa-5x"></i>-->
+<!--                    <h3>This is a cool heading</h3>-->
+<!--                    <p>-->
+<!--                        here we explain the heading in detail. Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--                        Accusamus animi assumenda cum delectus, dignissimos ducimus explicabo, fugiat harum illo illum-->
+<!--                        incidunt iste natus porro provident quo repudiandae sapiente velit veritatis.-->
+<!--                    </p>-->
+<!--                </section>-->
+
+<!--                <section  >-->
+<!--                    <i class="fa fa-wordpress fa-5x"></i>-->
+<!--                    <h3>This is a cool heading</h3>-->
+<!--                    <p>-->
+<!--                        here we explain the heading in detail. Lorem ipsum dolor sit amet, consectetur adipisicing elit.-->
+<!--                        Accusamus animi assumenda cum delectus, dignissimos ducimus explicabo, fugiat harum illo illum-->
+<!--                        incidunt iste natus porro provident quo repudiandae sapiente velit veritatis.-->
+<!--                    </p>-->
+<!--                </section>-->
+
+
+<!--                &lt;!&ndash; -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;   &ndash;&gt;-->
+
+<!--            </article>-->
+
+<!--        </section>-->

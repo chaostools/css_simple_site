@@ -34,45 +34,45 @@ h1 {
 /* Normalising/resetting css end =========================================================*/
 
 
-/* parent and parent dependent( which have positioning attrs) css*/
+/* parent and parent dependent( which have positioning/float attrs) css*/
 
-.p_hero {
+.as_hero {
     position: relative;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("../img/hero.jpg");
     background-size: cover;
     background-position: center;
-}
+    background-attachment: fixed; /* THIS IS THE BEST ATTRIBUTE EVER! MAKES OUR IMAGE PARRALAX <3 */
 
-.p_hero > .pd_content_box {
+}
+.as_hero > .pd_content_box {
     position: absolute;
     right: 32px;
     top: 30vh;
 }
-
-.row {
+.as_nav_bar {
     width: 90%;
     margin: 0 auto; /*  left right auto margin(center), top bottom=0  */
 
 }
-
-.logo {
+.as_nav_bar > .logo {
     height: 100px;
     width: auto; /*    i guess whatever the logo size is?*/
     float: left;
     margin-top: 12px;
 }
-.main-nav{
+.as_nav_bar > .as_nav_links {
     float: right;
     margin-top: 36px;
-    list-style: none ;
-    font-size: 0;  /* the most stupidest bug i have ever seen : https://stackoverflow.com/a/19038859/7500651   */
+    list-style: none;
+    font-size: 0; /* the most stupidest bug i have ever seen : https://stackoverflow.com/a/19038859/7500651   */
 }
-.main-nav>li{
+.as_nav_bar > .as_nav_links > li {
     display: inline-block;
 }
-.main-nav>li>a{
+
+.as_nav_bar > .as_nav_links > li > a {
     font-size: 16px;
     text-decoration: none;
     color: white;
@@ -80,24 +80,23 @@ h1 {
     font-weight: 700;
     padding: 8px 16px;
 }
-.main-nav>li>a:hover{
+
+.as_nav_bar > .as_nav_links > li > a:hover {
     color: mediumvioletred;
     background-color: white;
     transition: 0.5s;
 }
 
-.main-nav>li> a.active{
+.as_nav_bar > .as_nav_links > li > a.active {
     color: mediumvioletred;
     background-color: white;
     transition: 0.5s;
 }
-
 
 /* independent component based css =====================================================================*/
 
-
-.bigtext {
-    font-size: 50px;
+.h1-text-slim-white-capitalize {
+    font-size: 72px;
     color: white;
     font-weight: 100;
     text-transform: capitalize;
@@ -105,7 +104,6 @@ h1 {
     letter-spacing: 1px;
     word-spacing: 4px;
 }
-
 .btn1 {
     padding: 12px;
     margin: 4px;
@@ -130,14 +128,12 @@ h1 {
 
 
 }
-
 .btn1:hover {
 
     color: white;
     background-color: dodgerblue;
     border-color: dodgerblue;
 }
-
 .btn2 {
     padding: 12px 24px;
     margin: 4px;
@@ -159,7 +155,6 @@ h1 {
     transition: 0.3s;
 
 }
-
 .btn2:hover {
 
     color: red;
@@ -167,12 +162,28 @@ h1 {
     border-color: white;
 }
 
+.h3-text-red-caps{
+    font-size: 36px;
+    color: #c70000;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+.std-text-lighter-capitalize {
+    font-weight: lighter;
+    text-transform: capitalize;
+    padding: 1%;
+}
+
+
 
 /* other general css =============================================*/
 .margin_auto_lr {
     margin-left: auto;
     margin-right: auto;
 }
-
-
+.pad1percent {
+    padding: 1%;
+}
 
