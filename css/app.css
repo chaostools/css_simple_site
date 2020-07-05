@@ -1,0 +1,178 @@
+:root {
+    --bg_color: #ffffff;
+    --text_color: #280101;
+}
+
+/* Normalising/resetting css begin =========================================================*/
+* {
+    /* reset( from our end)    */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    background-color: var(--bg_color);
+    color: var(--text_color);
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+
+
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    /* reset( from our end)(somehow missed by the original selector )  */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Normalising/resetting css end =========================================================*/
+
+
+/* parent and parent dependent( which have positioning attrs) css*/
+
+.p_hero {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.p_hero > .pd_content_box {
+    position: absolute;
+    right: 32px;
+    top: 30vh;
+}
+
+.row {
+    width: 90%;
+    margin: 0 auto; /*  left right auto margin(center), top bottom=0  */
+
+}
+
+.logo {
+    height: 100px;
+    width: auto; /*    i guess whatever the logo size is?*/
+    float: left;
+    margin-top: 12px;
+}
+.main-nav{
+    float: right;
+    margin-top: 36px;
+    list-style: none ;
+    font-size: 0;  /* the most stupidest bug i have ever seen : https://stackoverflow.com/a/19038859/7500651   */
+}
+.main-nav>li{
+    display: inline-block;
+}
+.main-nav>li>a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 8px 16px;
+}
+.main-nav>li>a:hover{
+    color: mediumvioletred;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.main-nav>li> a.active{
+    color: mediumvioletred;
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+/* independent component based css =====================================================================*/
+
+
+.bigtext {
+    font-size: 50px;
+    color: white;
+    font-weight: 100;
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.btn1 {
+    padding: 12px;
+    margin: 4px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+
+    color: dodgerblue;
+    background-color: white;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 100px;
+
+
+    transition: 0.3s;
+
+
+}
+
+.btn1:hover {
+
+    color: white;
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+}
+
+.btn2 {
+    padding: 12px 24px;
+    margin: 4px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+
+    color: white;
+    background-color: transparent;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    border-radius: 100px;
+    transition: 0.3s;
+
+}
+
+.btn2:hover {
+
+    color: red;
+    background-color: white;
+    border-color: white;
+}
+
+
+/* other general css =============================================*/
+.margin_auto_lr {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
